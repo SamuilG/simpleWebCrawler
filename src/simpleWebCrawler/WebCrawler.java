@@ -14,6 +14,7 @@ public class WebCrawler {
 	private Queue<String> urlQueue;
 	private Queue<String> urlVisited;
 	
+	@SuppressWarnings("unchecked")
 	public WebCrawler() {
 		urlQueue = new LinkedList<>();
 		urlVisited = new ArrayList<>();
