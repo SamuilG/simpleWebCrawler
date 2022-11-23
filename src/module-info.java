@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author samuil
+ *
+ */
+module simpleWebCrawler {
+}
