@@ -6,4 +6,5 @@
  *
  */
 module simpleWebCrawler {
+	requires org.jsoup;
 }
