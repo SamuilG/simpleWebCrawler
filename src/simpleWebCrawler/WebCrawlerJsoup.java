@@ -2,6 +2,7 @@ package simpleWebCrawler;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -13,7 +14,13 @@ public class WebCrawlerJsoup {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String URL = "https://news.ycombinator.com";
+		Scanner inputURL = new Scanner(System.in);  // accept input
+	    System.out.println("Enter starting/root URL:");
+	    
+	    String URL = inputURL.nextLine();
+	    inputURL.close();
+		
+//		String URL = "https://news.ycombinator.com";
 		craw(URL, new ArrayList<String>());
 		
 	}

@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,8 +14,15 @@ public class WebCrawlerRegex {
 
 	public static void main(String[] args) {
 		
+		Scanner inputURL = new Scanner(System.in);  // accept input
+	    System.out.println("Enter starting/root URL:");
+	    	
 		WebCrawlerRegex crawler = new WebCrawlerRegex();
-		String urlRoot = "https://news.ycombinator.com/";
+	    String urlRoot = inputURL.nextLine();
+	    
+	    inputURL.close();
+	
+//		String urlRoot = "https://news.ycombinator.com/";
 		crawler.crawl(urlRoot, 100);
 		
 	}
